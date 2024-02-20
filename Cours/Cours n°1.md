@@ -1,25 +1,7 @@
-# LO22 ^toc
-
-- [[#LO22 ^toc|LO22]]
-	- [[#I. Introduction|I. Introduction]]
-		- [[#I.1. Introduction|I.1. Introduction]]
-				- [[#Définition (*Sûreté de fonctionnement*)|Définition (*Sûreté de fonctionnement*)]]
-					- [[#Exemple|Exemple]]
-		- [[#I.2. Génie logiciel|I.2. Génie logiciel]]
-		- [[#I.3. Bugs célèbres|I.3. Bugs célèbres]]
-		- [[#I.4. Debugging|I.4. Debugging]]
-		- [[#I.5. Vertus de l'organisation|I.5. Vertus de l'organisation]]
-		- [[#I.6. Qualités d'un logiciel|I.6. Qualités d'un logiciel]]
-	- [[#II. Définitions Sûreté de fonctionnement|II. Définitions Sûreté de fonctionnement]]
-		- [[#II.1. Définitions|II.1. Définitions]]
-				- [[#Définition (*Sûreté de fonctionnement*)|Définition (*Sûreté de fonctionnement*)]]
-				- [[#Définition (*Sûreté de fonctionnement en anglais : Dependability*)|Définition (*Sûreté de fonctionnement en anglais : Dependability*)]]
-					- [[#Attention|Attention]]
-				- [[#Définition (fautes, erreurs, défaillances)|Définition (fautes, erreurs, défaillances)]]
-
 #Cours #LO22 #P24
+# LO22 : Sûreté de Fonctionnement ^toc
 
-- [[#LO22 ^toc|LO22]]
+- [[#LO22 : Sûreté de Fonctionnement ^toc|LO22 : Sûreté de Fonctionnement]]
 	- [[#I. Introduction|I. Introduction]]
 		- [[#I.1. Introduction|I.1. Introduction]]
 				- [[#Définition (*Sûreté de fonctionnement*)|Définition (*Sûreté de fonctionnement*)]]
@@ -108,3 +90,4 @@ $$
 \mathrm{Faute} \implies \mathrm{Erreur} \implies \mathrm{Défaillance}
 $$
 On peut avoir une arborescence d'implications. On parle alors de *propagation*.
+
