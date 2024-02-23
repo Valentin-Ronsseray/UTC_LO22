@@ -91,3 +91,6 @@ $$
 $$
 On peut avoir une arborescence d'implications. On parle alors de *propagation*.
 
+> Informatique
+
+[[LO22_AI20_SdF_01_SdF_Intro.pdf#page=5&selection=22,0,22,12|LO22_AI20_SdF_01_SdF_Intro, page 5]]
