@@ -17,6 +17,10 @@
 				- [[#Définition (*Sûreté de fonctionnement en anglais : Dependability*)|Définition (*Sûreté de fonctionnement en anglais : Dependability*)]]
 					- [[#Attention|Attention]]
 				- [[#Définition (fautes, erreurs, défaillances)|Définition (fautes, erreurs, défaillances)]]
+		- [[#II.2. Fiabilité : Reliability $R(t)$|II.2. Fiabilité : Reliability $R(t)$]]
+		- [[#II.3. Maintenabilité $M(t)$|II.3. Maintenabilité $M(t)$]]
+		- [[#II.4. Disponibilité : Availability $A(t)$|II.4. Disponibilité : Availability $A(t)$]]
+		- [[#II.5. Taux de défaillance : $\lambda(t)$|II.5. Taux de défaillance : $\lambda(t)$]]
 
 Venir en TP la semaine prochaine (semaine A). Si pas possible, prévenir par email.
 
@@ -63,11 +67,11 @@ Juvénal (346 ap. J-C)
 ##### Définition (*Sûreté de fonctionnement*)
 Propriété qui permet à ses utilisateurs de placer une confiance justifiée dans le service délivré par un système
 Attributs de la Sûreté de Fonctionnement : **FDMS** :
-- **Fiabilité** : continuité du service
-- **Disponibilité** : fait d'être prêt à l'utilisation
+- **Fiabilité** : *continuité* du service
+- **Disponibilité** : fait d'être prêt à l'*utilisation*
 	- Restriction aux défaillances perturbantes
-- **Maintenabilité** : aptitude aux réparations
-- **Sécurité** : aptitude à éviter de provoquer des problèmes.
+- **Maintenabilité** : aptitude aux *réparations*
+- **Sécurité** : aptitude à éviter de provoquer des événements *catastrophiques*
 
 ##### Définition (*Sûreté de fonctionnement en anglais : Dependability*)
 Propriété qui permet à ses utilisateurs de placer une confiance justifiée dans le service délivré par un système
@@ -84,13 +88,46 @@ Sûreté != Sécurité != Safety
 ##### Définition (fautes, erreurs, défaillances)
 Selon cette même terminologie :
 - Une *défaillance* survient lorsque le service délivré par le système dévie de ce quoi il est destiné (*par exemple le non accomplissement d'une fonction requise*)
-- La cause de la défaillance est une *erreur* affectant une partie de l'état du système (*par exemple une variable erronée*)
+- La cause de la défaillance est une *erreur* affectant une partie de l'état du système (*par exemple une variable erronée (vitesse trop élevée*)
 - La cause de l'erreur est une *faute* (*par exemple un emplacement mémoire corrompu*)
 $$
 \mathrm{Faute} \implies \mathrm{Erreur} \implies \mathrm{Défaillance}
 $$
 On peut avoir une arborescence d'implications. On parle alors de *propagation*.
 
-> Informatique
+> [!PDF|yellow] [[LO22_AI20_SdF_02_SdF_Definitions.pdf#page=29&selection=16,0,16,9&color=yellow|LO22_AI20_SdF_02_SdF_Definitions, page 29]]
+> > attributs
+> 
+> Ce qui caractérisent
 
-[[LO22_AI20_SdF_01_SdF_Intro.pdf#page=5&selection=22,0,22,12|LO22_AI20_SdF_01_SdF_Intro, page 5]]
+> [!PDF|red] [[LO22_AI20_SdF_02_SdF_Definitions.pdf#page=31&selection=6,0,10,12&color=red|LO22_AI20_SdF_02_SdF_Definitions, page 31]]
+> > L’arbre de la SdF informatique
+
+> [!PDF|note] [[LO22_AI20_SdF_02_SdF_Definitions.pdf#page=31&selection=44,0,48,9&color=note|LO22_AI20_SdF_02_SdF_Definitions, page 31]]
+> > Sécurité - Innocuité
+> 
+> Signifie *safety*
+
+> [!PDF|red] [[LO22_AI20_SdF_02_SdF_Definitions.pdf#page=45&selection=71,0,73,12&color=red|LO22_AI20_SdF_02_SdF_Definitions, page 45]]
+> > Croissance de fiabilité
+> 
+> Bof bof selon le prof... Souvent assimilé au développement du logiciel
+
+### II.2. Fiabilité : Reliability $R(t)$
+
+> [!PDF|yellow] [[LO22_AI20_SdF_02_SdF_Definitions.pdf#page=46&selection=14,0,14,4&color=yellow|LO22_AI20_SdF_02_SdF_Definitions, page 46]]
+> > $R(t)$
+> 
+> Probabilité de fonctionner sans défaillance
+
+> [!PDF|yellow] [[LO22_AI20_SdF_02_SdF_Definitions.pdf#page=47&selection=34,7,34,11&color=yellow|LO22_AI20_SdF_02_SdF_Definitions, page 47]]
+> > N(t)
+> 
+> Nombre de survivants. De plus on pose $N_{0} := N(0)$.
+
+### II.3. Maintenabilité $M(t)$
+
+### II.4. Disponibilité : Availability $A(t)$
+
+### II.5. Taux de défaillance : $\lambda(t)$
+
