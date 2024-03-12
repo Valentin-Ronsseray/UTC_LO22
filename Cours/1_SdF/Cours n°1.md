@@ -131,3 +131,33 @@ On peut avoir une arborescence d'implications. On parle alors de *propagation*.
 
 ### II.5. Taux de défaillance : $\lambda(t)$
 
+> [!PDF|yellow] [[LO22_AI20_SdF_02_SdF_Definitions.pdf#page=52&selection=28,0,28,28&color=yellow|LO22_AI20_SdF_02_SdF_Definitions, page 52]]
+> > On démontre facilement que :
+> 
+> Généralement, $R$ est une fonction du temps.
+
+> [!PDF|important] [[LO22_AI20_SdF_02_SdF_Definitions.pdf#page=52&selection=6,1,9,3&color=important|LO22_AI20_SdF_02_SdF_Definitions, page 52]]
+> > Taux de défaillance : $l(t)$
+> 
+> La courbe ci-contre représente $R(t)$.
+
+> [!PDF|yellow] [[LO22_AI20_SdF_02_SdF_Definitions.pdf#page=54&selection=6,0,6,48&color=yellow|LO22_AI20_SdF_02_SdF_Definitions, page 54]]
+> > Taux de défaillance des composants électroniques
+> 
+> Pour rester dans le creux : déverminage et remplacement préventif
+
+> [!PDF|note] [[LO22_AI20_SdF_02_SdF_Definitions.pdf#page=55&selection=6,0,6,40&color=note|LO22_AI20_SdF_02_SdF_Definitions, page 55]]
+> > Taux de défaillance des êtres humains...
+> 
+> Ne pas confondre périodicité et probabilité.
+
+> [!PDF|yellow] [[LO22_AI20_SdF_02_SdF_Definitions.pdf#page=56&selection=56,0,56,34&color=yellow|LO22_AI20_SdF_02_SdF_Definitions, page 56]]
+> > Intégration par parties immédiates
+> 
+> $$\mathrm{MTTF} = \int_{0}^{\infty} t\left( -\frac{\mathrm{d}R}{\mathrm{d}t} \right) \, \mathrm{d}t = [-tR(t)]_{0}^{+\infty} + \int_{0}^{\infty} R(t) \, \mathrm{d}t = \int_{0}^{\infty} R(t) \, \mathrm{d}t$$
+
+> [!PDF|yellow] [[LO22_AI20_SdF_02_SdF_Definitions.pdf#page=56&selection=56,35,56,73&color=yellow|LO22_AI20_SdF_02_SdF_Definitions, page 56]]
+> > (R rapidement décroissante à l'infini)
+> 
+> $R(t) \xrightarrow[t \to +\infty]{}0$
+
