@@ -161,3 +161,18 @@ On peut avoir une arborescence d'implications. On parle alors de *propagation*.
 > 
 > $R(t) \xrightarrow[t \to +\infty]{}0$
 
+> [!PDF|yellow] [[LO22_AI20_SdF_02_SdF_Definitions.pdf#page=68&selection=83,0,92,1&color=yellow|LO22_AI20_SdF_02_SdF_Definitions, page 68]]
+> > La disponibilité asymptotique vaut donc μ/(l+μ).
+> 
+> On a intérêt à avoir $\mu \gg \lambda$ pour augmenter la disponibilité asymptotique.
+
+> [!PDF|yellow] [[LO22_AI20_SdF_02_SdF_Definitions.pdf#page=69&selection=16,0,16,7&color=yellow|LO22_AI20_SdF_02_SdF_Definitions, page 69]]
+> > gravité
+> 
+> *severity* en anglais
+
+> [!PDF|yellow] [[LO22_AI20_SdF_02_SdF_Definitions.pdf#page=69&selection=28,1,28,28&color=yellow|LO22_AI20_SdF_02_SdF_Definitions, page 69]]
+> > taux d'occurrence par heure
+> 
+> Une fréquence laisse suggérer une périodicité tandis qu'un taux d'occurence est une notion probabiliste.
+
