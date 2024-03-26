@@ -127,6 +127,11 @@ On peut avoir une arborescence d'implications. On parle alors de *propagation*.
 
 ### II.3. Maintenabilité $M(t)$
 
+> [!PDF|yellow] [[LO22_AI20_SdF_02_SdF_Definitions.pdf#page=49&selection=48,4,48,52&color=yellow|LO22_AI20_SdF_02_SdF_Definitions, page 49]]
+> > Rien n'est irréparable dans le domaine technique
+> 
+> Quelqu'un finira par venir le réparer au bout d'un certain moment...
+
 ### II.4. Disponibilité : Availability $A(t)$
 
 ### II.5. Taux de défaillance : $\lambda(t)$
@@ -134,7 +139,23 @@ On peut avoir une arborescence d'implications. On parle alors de *propagation*.
 > [!PDF|yellow] [[LO22_AI20_SdF_02_SdF_Definitions.pdf#page=52&selection=28,0,28,28&color=yellow|LO22_AI20_SdF_02_SdF_Definitions, page 52]]
 > > On démontre facilement que :
 > 
-> Généralement, $R$ est une fonction du temps.
+>###### Démonstration
+> Soit $X$ une variable aléatoire réelle mesurant la durée de vie de l'objet. Alors
+> $$
+> \begin{align}
+> \lambda(t) \mathrm{d}t & = \mathbb{P}(\text{"Défaillance sur $[t, t + \mathrm{d}t]$" | "Pas de défaillance sur [0, t]"}) \\
+> & = \mathbb{P}(X \leqslant t + \mathrm{d}t \mid X \geqslant t) \\
+> & = 1 - \mathbb{P}(X \geqslant t + \mathrm{d}t \mid X \geqslant t) \\
+> & = 1 - \frac{\mathbb{P}(X \geqslant t + \mathrm{d}t)}{\mathbb{P}(X \geqslant t)} \\
+> & = \frac{\mathbb{P}(X \geqslant t) - \mathbb{P}(X \geqslant t+\mathrm{d}t)}{\mathbb{P}(X \geqslant t)} \\
+> & = - \frac{R(t + \mathrm{d}t) - R(t)}{R(t)} \\
+> & = - \frac{\mathrm{d}R(t)}{R(t)}
+> \end{align}
+> $$
+> D'où
+> $$
+> \boxed{ \lambda(t) = - \frac{1}{R} \frac{\mathrm{d}R}{\mathrm{d}t} }
+> $$
 
 > [!PDF|important] [[LO22_AI20_SdF_02_SdF_Definitions.pdf#page=52&selection=6,1,9,3&color=important|LO22_AI20_SdF_02_SdF_Definitions, page 52]]
 > > Taux de défaillance : $l(t)$

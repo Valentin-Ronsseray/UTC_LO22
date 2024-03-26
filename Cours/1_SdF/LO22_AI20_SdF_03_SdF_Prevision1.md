@@ -15,7 +15,12 @@ Un *cumul* est une défaillance qui survient mais qui dort pour une certaine rai
 > 
 
 > [!PDF|yellow] [[LO22_AI20_SdF_03_SdF_Prevision1.pdf#page=11&selection=0,19,8,33&color=yellow|LO22_AI20_SdF_03_SdF_Prevision1, page 11]]
-> > walter.schon@utc.fr LO22/AI20 : SdF Prévision 1 Exemple simplifié d’APR déductive
+> > SdF Prévision 1 Exemple simplifié d’APR déductive
 > 
 > Top-Down
+
+> [!PDF|yellow] [[LO22_AI20_SdF_03_SdF_Prevision1.pdf#page=27&selection=0,19,10,7&color=yellow|LO22_AI20_SdF_03_SdF_Prevision1, page 27]]
+> > walter.schon@utc.fr LO22/AI20 : SdF Prévision 1 Diagrammes de fiabilité : redondance passive
+> 
+> Pas aux examens ou au TD
 
