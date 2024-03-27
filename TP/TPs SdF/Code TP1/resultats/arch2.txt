@@ -1,0 +1,7 @@
+Avec taux de reparation
+Fiabilité : 1.71239575428731e-781730
+Disponibilité : 0.999504334842817
+------------------------
+Sans taux de reparation
+Fiabilité : 1.71239575428731e-781730
+Disponibilité : 1.71239575428731e-781730
