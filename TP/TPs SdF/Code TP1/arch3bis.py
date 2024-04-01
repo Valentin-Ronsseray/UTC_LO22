@@ -51,7 +51,7 @@ import os
 if not os.path.exists('resultats'):
     os.makedirs('resultats')
 
-with open('resultats/arch3.txt', 'w') as f:
+with open('resultats/arch3bis.txt', 'w') as f:
     f.write("Avec taux de reparation\n")
     f.write("Disponibilité : " + str(S.availability(100000000000)) + "\n")
 

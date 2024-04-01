@@ -70,6 +70,7 @@ if not os.path.exists('resultats'):
     os.makedirs('resultats')
 
 with open('resultats/arch1.txt', 'w') as f:
+    f.write("Architecture 1 pour t = 100000000000\n")
     f.write("Avec taux de reparation\n")
     f.write("Fiabilité : " + str(S.reliability(100000000000)) + "\n")
     f.write("Disponibilité : " + str(S.availability(100000000000)) + "\n")
@@ -87,11 +88,12 @@ reliability_ = [S_.reliability(t) for t in timerange]
 availability_ = [S_.availability(t) for t in timerange]
 
 # Architecture 1 avec un taux de reparation
-p.plot(timerange, reliability, color="#ff7f0e") # orange
-p.plot(timerange, availability, color="#1f77b4") # bleu
+p.plot(timerange, reliability, color="#ff7f0e", label="Fiabilité avec taux de réparation") # orange
+p.plot(timerange, availability, color="#1f77b4", label="Disponibilité avec taux de réparation") # bleu
 
 # Architecture 1 sans taux de reparation
-p.plot(timerange, reliability_, color="#2ca02c") # vert
-p.plot(timerange, availability_, color="#e377c2") # rose
+p.plot(timerange, reliability_, color="#2ca02c", label="Fiabilité sans taux de réparation") # vert
+p.plot(timerange, availability_, color="#e377c2", label="Disponibilité sans taux de réparation") # rose
 
+p.legend()
 p.show()

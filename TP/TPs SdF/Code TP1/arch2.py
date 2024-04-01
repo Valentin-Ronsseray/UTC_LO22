@@ -92,20 +92,21 @@ with open('resultats/arch2.txt', 'w') as f:
     f.write("Disponibilité : " + str(S_.availability(100000000000)) + "\n")
 
 # # Avec taux de reparation
-# reliability = [S.reliability(t) for t in timerange]
-# availability = [S.availability(t) for t in timerange]
+reliability = [S.reliability(t) for t in timerange]
+availability = [S.availability(t) for t in timerange]
 
-# # Sans taux de reparation
-# reliability_ = [S_.reliability(t) for t in timerange]
-# availability_ = [S_.availability(t) for t in timerange]
+# Sans taux de reparation
+reliability_ = [S_.reliability(t) for t in timerange]
+availability_ = [S_.availability(t) for t in timerange]
 
-# # Architecture 2 avec un taux de reparation
-# p.plot(timerange, reliability, color="#ff7f0e") # orange
-# p.plot(timerange, availability, color="#1f77b4") # bleu
+# Architecture 2 avec un taux de reparation
+p.plot(timerange, reliability, color="#ff7f0e", label="Fiabilité avec taux de réparation") # orange
+p.plot(timerange, availability, color="#1f77b4", label="Disponibilité avec taux de réparation") # bleu
 
-# # Architecture 2 sans taux de reparation
-# p.plot(timerange, reliability_, color="#2ca02c") # vert
-# p.plot(timerange, availability_, color="#e377c2") # rose
+# Architecture 2 sans taux de reparation
+p.plot(timerange, reliability_, color="#2ca02c", label="Fiabilité sans taux de réparation") # vert
+p.plot(timerange, availability_, color="#e377c2", label="Disponibilité sans taux de réparation") # rose
 
-# p.show()
+p.legend()
+p.show()
 

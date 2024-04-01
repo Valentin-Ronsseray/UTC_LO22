@@ -1,6 +1,7 @@
+Architecture 1 pour t = 100000000000
 Avec taux de reparation
 Fiabilité : 3.42479150857462e-781730
-Disponibilité : 0.998727639877046
+Disponibilité : 0.998727639877047
 ------------------------
 Sans taux de reparation
 Fiabilité : 1.71239575428731e-781730
