@@ -1,0 +1,123 @@
+from fiabilipy import *
+import pylab as p
+
+timerange = range(0, 24*365*5, 100)
+
+P1 = Component('P1', 0)
+P2 = Component('P2', 2.28e-4)
+P3 = Component('P3', 2.28e-4)
+P4 = Component('P4', 0)
+P5 = Component('P5', 2.28e-4)
+P6 = Component('P6', 2.28e-4)
+
+M1 = Component('M1', 2.94e-4)
+M2 = Component('M2', 2.94e-4)
+
+Bus = Component('Bus', 1e-4)
+
+# Système 
+S = System()
+S['E'] = [P1, P4, P5]
+
+S[P1] = [P2]
+S[P2] = [M1, M2]
+
+S[P4] = [P3]
+S[P3] = [M1, M2]
+
+S[P5] = [P6]
+S[P6] = [M1, M2]
+
+S[M1] = S[M2] = [Bus]
+
+S[Bus] = 'S'
+
+# Autre système : facteur de birnbaum processeurs
+P1_ = Component('P1', 100000000000000000)
+P4_ = Component('P4', 100000000000000000)
+
+S_ = System()
+S_['E'] = [P1_, P4_, P5]
+
+S_[P1_] = [P2]
+S_[P2] = [M1, M2]
+
+S_[P4_] = [P3]
+S_[P3] = [M1, M2]
+
+S_[P5] = [P6]
+S_[P6] = [M1, M2]
+
+S_[M1] = S_[M2] = [Bus]
+
+S_[Bus] = 'S'
+
+def I1(t):
+    return S.reliability(t) - S_.reliability(t)
+
+p.plot(timerange, [I1(t) for t in timerange], label='Processeurs', color="#ff7f0e") # orange
+
+# Autre système : facteur de birnbaum bus
+P1 = Component('P1', 2.28e-4)
+pros = Voter(P1, 2, 3)
+
+Bus = Component('Bus', 0)
+Bus_ = Component('Bus', 100000000000000000)
+
+S = System()
+S['E'] = [pros]
+
+S[pros] = [M1, M2]
+
+S[M1] = S[M2] = [Bus]
+
+S[Bus] = 'S'
+
+S_ = System()
+S_['E'] = [pros]
+
+S_[pros] = [M1, M2]
+S_[M1] = S[M2] = [Bus_]
+
+S_[Bus_] = 'S'
+
+def I2(t):
+    return S.reliability(t) - S_.reliability(t)
+
+p.plot(timerange, [I2(t) for t in timerange], label='Bus', color="#2ca02c") # vert
+
+# Autre système : facteur de birnbaum mémoires
+Bus = Component('Bus', 1e-4)
+M1 = Component('M1', 0)
+M1_ = Component('M1', 100000000000000000)
+
+S = System()
+S['E'] = [pros]
+
+S[pros] = [M1, M2]
+
+S[M1] = S[M2] = [Bus]
+
+S[Bus] = 'S'
+
+S_ = System()
+S_['E'] = [pros]
+
+S_[pros] = [M1_, M2]
+S_[M1_] = S[M2] = [Bus]
+
+S_[Bus] = 'S'
+
+def I3(t):
+    return S.reliability(t) - S_.reliability(t)
+
+p.plot(timerange, [I3(t) for t in timerange], label='Mémoires', color="#d62728") # rouge
+
+p.xlabel('Temps (heures)')
+p.ylabel('Facteur de Birnbaum')
+
+# Affichage de la légende
+p.legend()
+
+# Affichage du graphique
+p.show()
